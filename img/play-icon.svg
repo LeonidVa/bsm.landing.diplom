@@ -1,0 +1,18 @@
+<svg width="80" height="80" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Group 3 Copy</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-12965 -2543)">
+<g id="Group 3 Copy">
+<g id="Ellipse">
+<use xlink:href="#path0_fill" transform="translate(12964 2542)" fill="#F4511E"/>
+</g>
+<g id="icon">
+<use xlink:href="#path1_fill" transform="translate(12996 2570)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 41 1.00007C 63.0914 1.00007 81 18.9086 81 40.9998C 81 63.0917 63.0914 81.0002 41 81.0002C 18.9086 81.0002 0.99999 63.0917 0.99999 40.9998C 0.99999 18.9086 18.9086 1.00007 41 1.00007Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 19.9737 11.8899L 5.05646 2.2613C 4.61548 1.99279 4.06787 2.03696 3.65426 2.03696C 1.99994 2.03696 2.00732 3.34562 2.00732 3.67694L 2.00732 23.3565C 2.00732 23.6368 2.00013 24.9965 3.65426 24.9965C 4.06787 24.9965 4.61555 25.0407 5.05646 24.7722L 19.9736 15.1443C 21.198 14.3975 20.9864 13.5174 20.9864 13.5174C 20.9864 13.5174 21.198 12.636 19.9737 11.8899Z"/>
+</defs>
+</svg>
