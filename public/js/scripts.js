@@ -297,6 +297,8 @@ $(document).ready(function() {
 
                 // data.set('verified', captcha);
 
+                data.set('source', 'student.besmarter.ru');
+
                 sendRequest(data);
             }
         });
