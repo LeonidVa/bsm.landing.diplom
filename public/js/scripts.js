@@ -265,11 +265,18 @@ $(document).ready(function() {
                 e.preventDefault();
                 e.stopPropagation();
 
+                var captcha = $form.find('[name="g-recaptcha-response"]').val();
+
+                if (captcha.trim() === '') {
+                    alert('Пожалуйста, подтвердите что вы не робот!');
+                    return;
+                }
+
                 var data = new FormData();
 
                 for(var i = 0; i < fields.length; i++) {
                     var field = fields[i];
-                    switch(field) {
+                    switch (field) {
                         case 'file':
                             var files = $form.find('[name="file"]')[0].files;
                             if (files.length > 0) {
@@ -283,7 +290,7 @@ $(document).ready(function() {
                     }
                 }
 
-                data.set('verified', true);
+                data.set('verified', captcha);
 
                 sendRequest(data);
             }
@@ -294,7 +301,35 @@ $(document).ready(function() {
         'name', 'phone', 'email', 'theme', 'worktype',
         'discipline', 'deadline', 'size', 'comment', 'file',
     ]);
-    form('form2', ['phone']);
+
+    // Вторая форма с телефоном, в два этапа
+    // 1. Пользователь вводит телефон
+    // 2. Пользователь вводит капчу
+    var form2data = new FormData();
+    $('#form2 [type="submit"]').on('click', function(e) {
+        var $form = $('#form2');
+        if ($form[0].checkValidity()) {
+            e.preventDefault();
+            e.stopPropagation();
+            form2data.set('phone', $form.find('[name="phone"]').val());
+            $('.modal-overlay, .modal__captcha').show();
+        }
+    });
+    $('#captcha-submit').on('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        var captcha = $('.modal__captcha [name="g-recaptcha-response"]').val();
+
+        if (captcha.trim() === '') {
+            alert('Пожалуйста, подтвердите что вы не робот!');
+            return;
+        }
+
+        form2data.append('verified', captcha);
+        sendRequest(form2data);
+    });
+
     form('form3', [
         'name', 'phone', 'email', 'theme', 'worktype',
         'discipline', 'deadline', 'size', 'comment', 'file',

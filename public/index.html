@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="js/slick/slick-theme.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
 	<div class="wrapper main">
@@ -308,6 +309,7 @@
 				</div>
 				<a href="#" class="block-form__more-info">Дополнительная информация</a>
 				<p class="user-agreement">Отправляя эти данные, я принимаю <a href="#" data-modal="modal_user-agreement">Политику конфиденциальности</a></p>
+				<div class="g-recaptcha" data-sitekey="6LdEPVcUAAAAADLIyn6B2QGmxCGxED0Os2ElIwWS"></div>
 				<button type="submit" class="block-form__btn">Оценить</button>
 			</form>
 		</section>
@@ -622,6 +624,7 @@
 				</div>
 				<a href="#" class="block-form__more-info">Дополнительная информация</a>
 				<p class="user-agreement">Отправляя эти данные, я принимаю <a href="#" data-modal="modal_user-agreement">Политику конфиденциальности</a></p>
+				<div class="g-recaptcha" data-sitekey="6LdEPVcUAAAAADLIyn6B2QGmxCGxED0Os2ElIwWS"></div>
 				<button type="submit" class="block-form__btn">Заказать</button>
 			</form>
 		</section>
@@ -1266,6 +1269,14 @@
 
 	<div class="modal-overlay">
 		<div class="modals">
+			<div class="modal modal__captcha">
+				<div class="block-form block-form2 modal-form">
+					<div class="block-form__form">
+						<div class="g-recaptcha" data-sitekey="6LdEPVcUAAAAADLIyn6B2QGmxCGxED0Os2ElIwWS"></div>
+						<button type="button" id="captcha-submit" class="block-form__btn">Готово!</button>
+					</div>
+				</div>
+			</div>
 			<div class="modal modal_order-call modal__order-call">
 				<div class="block-form block-form2 modal-form">
 					<h2 class="block-form__title">Заказать звонок</h2>
@@ -1279,6 +1290,7 @@
 							<input type="text" name="phone" id="form-phone2" placeholder="Ваш телефон" required>
 						</div>
 						<p class="user-agreement">Отправляя эти данные, я принимаю <a href="#" data-modal="modal_user-agreement">Политику конфиденциальности</a></p>
+						<div class="g-recaptcha" data-sitekey="6LdEPVcUAAAAADLIyn6B2QGmxCGxED0Os2ElIwWS"></div>
 						<button type="submit" class="block-form__btn">Позвоните мне!</button>
 					</form>
 				</div>
@@ -1300,6 +1312,7 @@
 							<textarea name="comment" placeholder="Ваш вопрос"></textarea>
 						</div>
 						<p class="user-agreement">Отправляя эти данные, я принимаю <a href="#" data-modal="modal_user-agreement">Политику конфиденциальности</a></p>
+						<div class="g-recaptcha" data-sitekey="6LdEPVcUAAAAADLIyn6B2QGmxCGxED0Os2ElIwWS"></div>
 						<button type="submit" class="block-form__btn">Задать вопрос!</button>
 					</form>
 				</div>

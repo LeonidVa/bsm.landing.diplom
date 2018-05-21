@@ -3236,4 +3236,9 @@ select option {
   display: none;
   padding-bottom: 10px;
 }
-
+.g-recaptcha {
+  margin-bottom: 20px;
+}
+.g-recaptcha > div {
+  margin: auto;
+}
