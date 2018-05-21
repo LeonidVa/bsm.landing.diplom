@@ -23,7 +23,7 @@
 						<div class="humburger__line"></div>
 						<div class="humburger__line"></div>
 					</a>
-					<a href="index.html" class="header__logo">
+					<a href="/" class="header__logo">
 						Be<span>Smarter!<span>
 					</a>
 					<nav class="nav">
@@ -211,33 +211,74 @@
 
 		<section class="block-form">
 			<h2 class="block-form__title">Узнай стоимость работы прямо сейчас</h2>
-			<form action="#" method="post" class="block-form__form">
+			<form action="#" id="form1" method="post" class="block-form__form">
 				<div class="block-form__item">
 					<label for="form-name">Имя*</label>
-					<input type="text" name="user-name" id="form-name" placeholder="Ваше имя" required>
+					<input type="text" name="name" id="form-name" placeholder="Ваше имя" required>
 				</div>
 				<div class="block-form__item">
-					<label for="form-phone">Телефон*</label>
-					<input type="tel" name="phone" id="form-phone" placeholder="Ваш телефон" required>
+					<label for="form-phone4">Телефон*</label>
+					<input type="tel" name="phone" id="form-phone4" placeholder="Ваш телефон" required>
 				</div>
 				<div class="block-form__additional-fields">
 					<div class="block-form__item">
-						<label for="form-phone">Почта</label>
-						<input type="email" name="email" id="form-phone" placeholder="email">
+						<label for="form-email7">Почта</label>
+						<input type="email" name="email" id="form-email7" placeholder="email">
 					</div>
 					<div class="block-form__item">
 						<label for="form-topic">Тема</label>
-						<input type="text" name="topic" id="form-topic" placeholder="Тема работы">
+						<input type="text" name="theme" id="form-topic" placeholder="Тема работы">
 					</div>
 					<div class="block-form__item">
 						<label for="form-work-type">Вид работы</label>
 						<div class="select-wrap">
-							<select name="work-type" id="form-work-type" onchange="this.style.color='black'">
+							<select name="worktype" id="form-work-type" onchange="this.style.color='black'">
 								<option value="" disabled selected hidden>Укажите тип работы</option>
-								<option value="work-type-1">Вид работы 1</option>
-								<option value="work-type-2">Вид работы 2</option>
-								<option value="work-type-3">Вид работы 3</option>
-								<option value="work-type-4">Вид работы 4</option>
+								<option value="diplom">Дипломная работа</option>
+								<option value="diplompro">Дипломный проект</option>
+								<option value="magisterdiss">Магистерская диссертация</option>
+								<option value="diplommba">Диплом МВА</option>
+								<option value="casemba">Кейс Мва</option>
+								<option value="kursovayteor">Курсовая работа теоретическая</option>
+								<option value="kursovayaprakt">Курсовая работа практическая</option>
+								<option value="kursovaya">Курсовой проект</option>
+								<option value="dorabdiplom">Доработка диплома</option>
+								<option value="dorabkurs">Доработка курсового</option>
+								<option value="otchpropra">Отчёт по производственной практике</option>
+								<option value="otchprepra">Отчет по преддипломной практике</option>
+								<option value="referat">Реферат</option>
+								<option value="kontrolka">Контрольная работа</option>
+								<option value="problem">Решение задач</option>
+								<option value="anal">Аналитический отчет</option>
+								<option value="statia">Статья</option>
+								<option value="test">Тесты</option>
+								<option value="anwers">Ответы на вопросы</option>
+								<option value="onlinetest">Онлайн тесты</option>
+								<option value="esse">Эссе</option>
+								<option value="planB">Бизнес план</option>
+								<option value="translation">Перевод текста</option>
+								<option value="zashitmaterial">Материлы к защите</option>
+								<option value="otzyv">Отзыв</option>
+								<option value="review">Рецензия</option>
+								<option value="annotation">Аннотация</option>
+								<option value="other">Иная работа</option>
+								<option value="draft">Чертежи</option>
+								<option value="aspref">Асп реферат</option>
+								<option value="disser">Диссертация</option>
+								<option value="phd">Докторская</option>
+								<option value="vak">Cтатья ВАК</option>
+								<option value="presentation">Презентация</option>
+								<option value="otchetpropra">Отчет по практике</option>
+								<option value="doklad">Речь/доклад</option>
+								<option value="slides">Слайды</option>
+								<option value="razdatok">Раздаток</option>
+								<option value="plakat A2">Плакаты А2, А3</option>
+								<option value="titulniy list">Титульный лист</option>
+								<option value="posledniy list">Последний лист</option>
+								<option value="AP proverka">АП проверка</option>
+								<option value="AP sertificat">АП сертификат</option>
+								<option value="shpora">Шпаргалки</option>
+								<option value="korrektura">Корректура</option>
 							</select>
 						</div>
 					</div>
@@ -251,11 +292,11 @@
 					</div>
 					<div class="block-form__item">
 						<label for="form-volume">Объем</label>
-						<input type="text" name="volume" id="form-volume" placeholder="Требуемый объем">
+						<input type="text" name="size" id="form-volume" placeholder="Требуемый объем">
 					</div>
 					<div class="block-form__item">
-						<label for="form-commentary">Комментарий</label>
-						<textarea name="" id="" placeholder="Ваши комментарии"></textarea>
+						<label for="form-comment">Комментарий</label>
+						<textarea name="comment" id="form-comment" placeholder="Ваши комментарии"></textarea>
 					</div>
 					<div class="block-form__item">
 						<div class="file-input">
@@ -350,7 +391,32 @@
 					<script type="text/javascript">
 						jQuery(document).ready(function() {
 							jQuery(".eTimer").eTimer({
-								etType: 1, etDate: "11.05.2018.0.0", etTitleText: "", etTitleSize: 20, etShowSign: 0, etSep: ":", etFontFamily: "Georgia", etTextColor: "white", etPaddingTB: 0, etPaddingLR: 0, etBackground: "transparent", etBorderSize: 0, etBorderRadius: 0, etBorderColor: "white", etShadow: " 0px 0px 0px 0px #333333", etLastUnit: 4, etNumberFontFamily: "Arial", etNumberSize: 48, etNumberColor: "white", etNumberPaddingTB: 0, etNumberPaddingLR: 0, etNumberBackground: "transparent", etNumberBorderSize: 0, etNumberBorderRadius: 0, etNumberBorderColor: "transparent", etNumberShadow: "inset 0px 0px 0px 0px rgba(0, 0, 0, 0.5)"
+								etType: 1,
+								etDate: "11.05.2018.0.0",
+								etTitleText: "",
+								etTitleSize: 20,
+								etShowSign: 0,
+								etSep: ":",
+								etFontFamily: "Georgia",
+								etTextColor: "white",
+								etPaddingTB: 0,
+								etPaddingLR: 0,
+								etBackground: "transparent",
+								etBorderSize: 0,
+								etBorderRadius: 0,
+								etBorderColor: "white",
+								etShadow: " 0px 0px 0px 0px #333333",
+								etLastUnit: 4,
+								etNumberFontFamily: "Arial",
+								etNumberSize: 48,
+								etNumberColor: "white",
+								etNumberPaddingTB: 0,
+								etNumberPaddingLR: 0,
+								etNumberBackground: "transparent",
+								etNumberBorderSize: 0,
+								etNumberBorderRadius: 0,
+								etNumberBorderColor: "transparent",
+								etNumberShadow: "inset 0px 0px 0px 0px rgba(0, 0, 0, 0.5)"
 							});
 						});
 					</script>
@@ -359,8 +425,8 @@
 				<p>при одновременном<br>заказе вместе с работой</p>
 			</div>
 
-			<form action="" method="post">
-				<input type="text" name="phone" placeholder="+7 123 456 78 90" required="">
+			<form action="" id="form2" method="post">
+				<input type="text" name="phone" placeholder="+7 123 456 78 90" required>
 				<button type="submit">Позвоните мне!</button>
 			</form>
 		</section>
@@ -459,51 +525,92 @@
 
 		<section id="form-order" class="block-form">
 			<h2 class="block-form__title">Заказать работу</h2>
-			<form action="#" method="post" class="block-form__form">
+			<form action="#" id="form3" method="post" class="block-form__form">
 				<div class="block-form__item">
-					<label for="form-name">Имя*</label>
-					<input type="text" name="" id="form-name" placeholder="Ваше имя" required>
+					<label for="form-name1">Имя*</label>
+					<input type="text" name="name" id="form-name1" placeholder="Ваше имя" required>
 				</div>
 				<div class="block-form__item">
-					<label for="form-phone">Телефон*</label>
-					<input type="text" name="" id="form-phone" placeholder="Ваш телефон" required>
+					<label for="form-phone1">Телефон*</label>
+					<input type="text" name="phone" id="form-phone1" placeholder="Ваш телефон" required>
 				</div>
 				<div class="block-form__additional-fields">
 					<div class="block-form__item">
-						<label for="form-phone">Почта</label>
-						<input type="email" name="email" id="form-phone" placeholder="email">
+						<label for="form-email1">Почта</label>
+						<input type="email" name="email" id="form-email1" placeholder="email">
 					</div>
 					<div class="block-form__item">
-						<label for="form-topic">Тема</label>
-						<input type="text" name="topic" id="form-topic" placeholder="Тема работы">
+						<label for="form-topic1">Тема</label>
+						<input type="text" name="theme" id="form-topic1" placeholder="Тема работы">
 					</div>
 					<div class="block-form__item">
-						<label for="form-work-type">Вид работы</label>
+						<label for="form-work-type1">Вид работы</label>
 						<div class="select-wrap">
-							<select name="work-type" id="form-work-type" onchange="this.style.color='black'">
+							<select name="worktype" id="form-work-type1" onchange="this.style.color='black'">
 								<option value="" disabled selected hidden>Укажите тип работы</option>
-								<option value="work-type-1">Вид работы 1</option>
-								<option value="work-type-2">Вид работы 2</option>
-								<option value="work-type-3">Вид работы 3</option>
-								<option value="work-type-4">Вид работы 4</option>
+								<option value="diplom">Дипломная работа</option>
+								<option value="diplompro">Дипломный проект</option>
+								<option value="magisterdiss">Магистерская диссертация</option>
+								<option value="diplommba">Диплом МВА</option>
+								<option value="casemba">Кейс Мва</option>
+								<option value="kursovayteor">Курсовая работа теоретическая</option>
+								<option value="kursovayaprakt">Курсовая работа практическая</option>
+								<option value="kursovaya">Курсовой проект</option>
+								<option value="dorabdiplom">Доработка диплома</option>
+								<option value="dorabkurs">Доработка курсового</option>
+								<option value="otchpropra">Отчёт по производственной практике</option>
+								<option value="otchprepra">Отчет по преддипломной практике</option>
+								<option value="referat">Реферат</option>
+								<option value="kontrolka">Контрольная работа</option>
+								<option value="problem">Решение задач</option>
+								<option value="anal">Аналитический отчет</option>
+								<option value="statia">Статья</option>
+								<option value="test">Тесты</option>
+								<option value="anwers">Ответы на вопросы</option>
+								<option value="onlinetest">Онлайн тесты</option>
+								<option value="esse">Эссе</option>
+								<option value="planB">Бизнес план</option>
+								<option value="translation">Перевод текста</option>
+								<option value="zashitmaterial">Материлы к защите</option>
+								<option value="otzyv">Отзыв</option>
+								<option value="review">Рецензия</option>
+								<option value="annotation">Аннотация</option>
+								<option value="other">Иная работа</option>
+								<option value="draft">Чертежи</option>
+								<option value="aspref">Асп реферат</option>
+								<option value="disser">Диссертация</option>
+								<option value="phd">Докторская</option>
+								<option value="vak">Cтатья ВАК</option>
+								<option value="presentation">Презентация</option>
+								<option value="otchetpropra">Отчет по практике</option>
+								<option value="doklad">Речь/доклад</option>
+								<option value="slides">Слайды</option>
+								<option value="razdatok">Раздаток</option>
+								<option value="plakat A2">Плакаты А2, А3</option>
+								<option value="titulniy list">Титульный лист</option>
+								<option value="posledniy list">Последний лист</option>
+								<option value="AP proverka">АП проверка</option>
+								<option value="AP sertificat">АП сертификат</option>
+								<option value="shpora">Шпаргалки</option>
+								<option value="korrektura">Корректура</option>
 							</select>
 						</div>
 					</div>
 					<div class="block-form__item">
-						<label for="form-discipline">Предмет</label>
-						<input type="text" name="discipline" id="form-discipline" placeholder="Предмет или дисциплина">
+						<label for="form-discipline1">Предмет</label>
+						<input type="text" name="discipline" id="form-discipline1" placeholder="Предмет или дисциплина">
 					</div>
 					<div class="block-form__item">
-						<label for="form-deadline">Срок сдачи</label>
-						<input type="text" name="deadline" id="form-deadline" placeholder="Укажите срок сдачи работы">
+						<label for="form-deadline1">Срок сдачи</label>
+						<input type="text" name="deadline" id="form-deadline1" placeholder="Укажите срок сдачи работы">
 					</div>
 					<div class="block-form__item">
-						<label for="form-volume">Объем</label>
-						<input type="text" name="volume" id="form-volume" placeholder="Требуемый объем">
+						<label for="form-volume1">Объем</label>
+						<input type="text" name="size" id="form-volume1" placeholder="Требуемый объем">
 					</div>
 					<div class="block-form__item">
-						<label for="form-commentary">Комментарий</label>
-						<textarea name="" id="" placeholder="Ваши комментарии"></textarea>
+						<label for="form-comment1">Комментарий</label>
+						<textarea name="comment" id="form-comment1" placeholder="Ваши комментарии"></textarea>
 					</div>
 					<div class="block-form__item">
 						<div class="file-input">
@@ -1162,14 +1269,14 @@
 			<div class="modal modal_order-call modal__order-call">
 				<div class="block-form block-form2 modal-form">
 					<h2 class="block-form__title">Заказать звонок</h2>
-					<form action="#" method="post" class="block-form__form">
+					<form action="#" method="post" id="form4" class="block-form__form">
 						<div class="block-form__item">
-							<label for="form-name">Имя*</label>
-							<input type="text" name="" id="form-name" placeholder="Ваше имя" required>
+							<label for="form-name2">Имя*</label>
+							<input type="text" name="name" id="form-name2" placeholder="Ваше имя" required>
 						</div>
 						<div class="block-form__item">
-							<label for="form-phone">Телефон*</label>
-							<input type="text" name="" id="form-phone" placeholder="Ваш телефон" required>
+							<label for="form-phone2">Телефон*</label>
+							<input type="text" name="phone" id="form-phone2" placeholder="Ваш телефон" required>
 						</div>
 						<p class="user-agreement">Отправляя эти данные, я принимаю <a href="#" data-modal="modal_user-agreement">Политику конфиденциальности</a></p>
 						<button type="submit" class="block-form__btn">Позвоните мне!</button>
@@ -1179,18 +1286,18 @@
 			<div class="modal modal_ask-question modal__ask-question">
 				<div class="block-form block-form2 modal-form">
 					<h2 class="block-form__title">Задать вопрос</h2>
-					<form action="#" method="post" class="block-form__form">
+					<form id="form5" action="#" method="post" class="block-form__form">
 						<div class="block-form__item">
-							<label for="form-name">Имя*</label>
-							<input type="text" name="" id="form-name" placeholder="Ваше имя" required>
+							<label for="form-name3">Имя*</label>
+							<input type="text" name="name" id="form-name3" placeholder="Ваше имя" required>
 						</div>
 						<div class="block-form__item">
-							<label for="form-phone">Телефон*</label>
-							<input type="text" name="" id="form-phone" placeholder="Ваш телефон" required>
+							<label for="form-phone3">Телефон*</label>
+							<input type="text" name="phone" id="form-phone3" placeholder="Ваш телефон" required>
 						</div>
 						<div class="block-form__item">
 							<label>Вопрос</label>
-							<textarea name="question" placeholder="Ваш вопрос"></textarea>
+							<textarea name="comment" placeholder="Ваш вопрос"></textarea>
 						</div>
 						<p class="user-agreement">Отправляя эти данные, я принимаю <a href="#" data-modal="modal_user-agreement">Политику конфиденциальности</a></p>
 						<button type="submit" class="block-form__btn">Задать вопрос!</button>
@@ -1208,6 +1315,5 @@
 
 	<script src="js/slick/slick.min.js"></script>
 	<script src="js/scripts.js"></script>
-	
 </body>
 </html>
