@@ -256,9 +256,10 @@ $(document).ready(function() {
      * Обработка отправки формы
      * @param {String} id - id формы
      * @param {Array} fields - Поля формы которые следует отправить на сервер
+     * @param {String} formName - Название формы, к примеру "Заказ обратного звонка"
      * @return {void}
      */
-    function form(id, fields) {
+    function form(id, fields, formName) {
         $('#' + id + ' [type="submit"]').on('click', function(e) {
             var $form = $('#' + id);
             if ($form[0].checkValidity()) {
@@ -275,6 +276,8 @@ $(document).ready(function() {
                 */
 
                 var data = new FormData();
+
+                data.set('form', formName);
 
                 for(var i = 0; i < fields.length; i++) {
                     var field = fields[i];
@@ -302,9 +305,10 @@ $(document).ready(function() {
     form('form1', [
         'name', 'phone', 'email', 'theme', 'worktype',
         'discipline', 'deadline', 'size', 'comment', 'file',
-    ]);
+    ], 'Узнай стоимость работы прямо сейчас');
 
-    form('form2', ['phone']);
+    form('form2', ['phone'], 'Успей получить скидку на пакет "Успешная Защита"');
+
     // Вторая форма с телефоном, в два этапа
     // 1. Пользователь вводит телефон
     // 2. Пользователь вводит капчу
@@ -337,7 +341,7 @@ $(document).ready(function() {
     form('form3', [
         'name', 'phone', 'email', 'theme', 'worktype',
         'discipline', 'deadline', 'size', 'comment', 'file',
-    ]);
-    form('form4', ['name', 'phone']);
-    form('form5', ['phone', 'name', 'comment']);
+    ], 'Заказ работы');
+    form('form4', ['name', 'phone'], 'Заказ звонка');
+    form('form5', ['phone', 'name', 'comment'], 'Вопрос');
 });
