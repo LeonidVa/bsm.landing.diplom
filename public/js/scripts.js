@@ -265,12 +265,14 @@ $(document).ready(function() {
                 e.preventDefault();
                 e.stopPropagation();
 
+                /*
                 var captcha = $form.find('[name="g-recaptcha-response"]').val();
 
                 if (captcha.trim() === '') {
                     alert('Пожалуйста, подтвердите что вы не робот!');
                     return;
                 }
+                */
 
                 var data = new FormData();
 
@@ -290,7 +292,7 @@ $(document).ready(function() {
                     }
                 }
 
-                data.set('verified', captcha);
+                // data.set('verified', captcha);
 
                 sendRequest(data);
             }
@@ -302,9 +304,11 @@ $(document).ready(function() {
         'discipline', 'deadline', 'size', 'comment', 'file',
     ]);
 
+    form('form2', ['phone']);
     // Вторая форма с телефоном, в два этапа
     // 1. Пользователь вводит телефон
     // 2. Пользователь вводит капчу
+    /*
     var form2data = new FormData();
     $('#form2 [type="submit"]').on('click', function(e) {
         var $form = $('#form2');
@@ -328,7 +332,7 @@ $(document).ready(function() {
 
         form2data.append('verified', captcha);
         sendRequest(form2data);
-    });
+    });*/
 
     form('form3', [
         'name', 'phone', 'email', 'theme', 'worktype',
