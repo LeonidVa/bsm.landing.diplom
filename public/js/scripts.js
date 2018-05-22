@@ -238,7 +238,7 @@ $(document).ready(function() {
     function sendRequest(data) {
         $.ajax({
             type: 'POST',
-            url: 'http://2018.besmarter.ru/api/form_data',
+            url: 'https://2018.besmarter.ru/api/form_data',
             data: data,
             cache: false,
             contentType: false,
