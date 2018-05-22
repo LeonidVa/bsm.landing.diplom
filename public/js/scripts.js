@@ -266,6 +266,12 @@ $(document).ready(function() {
                 e.preventDefault();
                 e.stopPropagation();
 
+                try {
+                    yaCounter48969491.reachGoal(id);
+                } catch(e) {
+
+                }
+
                 /*
                 var captcha = $form.find('[name="g-recaptcha-response"]').val();
 
