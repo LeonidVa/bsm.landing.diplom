@@ -17,4 +17,3 @@ stage_deploy:
   script:
   - ssh-add <(echo "$STAGING_PRIVATE_KEY")
   - ssh -p2017 rs@145.239.85.163 "sh /var/www/update-student.sh"
-
