@@ -550,6 +550,26 @@ table {
         &:hover {
             background-color: #922d0e;
         }
+
+        &:nth-child(1){
+            background-color: #FF8A65;
+        }
+
+        &:nth-child(2){
+            background-color: #ff7043;
+        }
+
+        &:nth-child(3){
+            background-color: #f4511e;
+        }
+
+        &:nth-child(4){
+            background-color: #e64a19;
+        }
+
+        &:nth-child(5){
+            background-color: #d84315;
+        }
     }
 }
 
