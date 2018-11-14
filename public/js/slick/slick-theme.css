@@ -19,6 +19,7 @@
 .slick-prev,
 .slick-next
 {
+    z-index: 99;
     font-size: 0;
     line-height: 0;
 
@@ -67,11 +68,11 @@
 .slick-next:before
 {
     font-family: 'slick';
-    font-size: 20px;
-    line-height: 1;
+    font-size: 80px;
+    line-height: 1.2;
+    color: #f05638;
 
     opacity: .75;
-    color: white;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -79,11 +80,11 @@
 
 .slick-prev
 {
-    left: -25px;
+    left: 5%;
 }
 [dir='rtl'] .slick-prev
 {
-    right: -25px;
+    right: 5%;
     left: auto;
 }
 .slick-prev:before
@@ -97,12 +98,12 @@
 
 .slick-next
 {
-    right: -25px;
+    right: 5%;
 }
 [dir='rtl'] .slick-next
 {
     right: auto;
-    left: -25px;
+    left: 5%;
 }
 .slick-next:before
 {

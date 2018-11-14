@@ -1,12 +1,40 @@
 $('.slick').slick({
-    centerMode: true,
-    centerPadding: '60px',
-    variableWidth: true,
-    infinite: true,
-    slidesToShow: 7,
-    autoplay: 1,
-    arrows: false,
-    adaptiveHeight: true
+            dots: false,
+            infinite: true,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            pauseOnHover: true,
+            arrows: true,
+            easing: 'ease',
+            responsive: [
+                {
+                    breakpoint: 660,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 1300,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+
+            ]
     // responsive: [
     //   {
     //     breakpoint: 1400,
